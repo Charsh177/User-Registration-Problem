@@ -16,5 +16,9 @@ public class UserRegistrationProblem {
         System.out.println("Enter your Last Name : ");
         String lastName= sc.nextLine();
         System.out.println(Pattern.matches("^[A-Z]{1}[a-z]{2,}",lastName));
+
+        System.out.println("Enter your email Id : ");
+        String emailId= sc.nextLine();
+        System.out.println(Pattern.matches("^[0-9A-Za-z]+(([._+-]?)[0-9A-Za-z]+)*@[0-9A-Za-z]+.[a-z]{2,4}.([a-z]{2,3})*$", emailId));
     }
 }
