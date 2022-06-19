@@ -12,6 +12,5 @@ public class UserRegistrationProblem {
         System.out.println("Enter your First Name : ");
         String firstName= sc.nextLine();
         System.out.println(Pattern.matches("^[A-Z]{1}[a-z]{2,}",firstName));
-
     }
 }
