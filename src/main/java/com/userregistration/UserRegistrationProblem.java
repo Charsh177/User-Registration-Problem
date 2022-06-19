@@ -1,9 +1,17 @@
 package com.userregistration;
 
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class UserRegistrationProblem {
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome to User Registration Program");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your First Name : ");
+        String firstName= sc.nextLine();
+        System.out.println(Pattern.matches("^[A-Z]{1}[a-z]{2,}",firstName));
+
     }
 }
