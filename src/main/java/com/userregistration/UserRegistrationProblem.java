@@ -20,5 +20,9 @@ public class UserRegistrationProblem {
         System.out.println("Enter your email Id : ");
         String emailId= sc.nextLine();
         System.out.println(Pattern.matches("^[0-9A-Za-z]+(([._+-]?)[0-9A-Za-z]+)*@[0-9A-Za-z]+.[a-z]{2,4}.([a-z]{2,3})*$", emailId));
+
+        System.out.println("Enter your Mobile Number : ");
+        String mobileNumber= sc.nextLine();
+        System.out.println(Pattern.matches("(91\\s)?[6-9][0-9]{9}$",mobileNumber));
     }
 }
