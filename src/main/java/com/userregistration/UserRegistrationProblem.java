@@ -36,5 +36,9 @@ public class UserRegistrationProblem {
         System.out.println("Enter your Password : ");
         String numPassword= sc.nextLine();
         System.out.println(Pattern.matches("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$",numPassword));
+
+        System.out.println("Enter your Password : ");
+        String scharPassword= sc.nextLine();
+        System.out.println(Pattern.matches("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$",scharPassword));
     }
 }
